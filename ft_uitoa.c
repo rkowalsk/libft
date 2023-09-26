@@ -31,9 +31,7 @@ char	*ft_uitoa(unsigned int n)
 {
 	int			size;
 	char		*str;
-	int			i;
 
-	i = 0;
 	size = get_size(n);
 	str = (char *)malloc((size + 1) * sizeof(char));
 	if (!str)

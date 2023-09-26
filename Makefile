@@ -60,7 +60,7 @@ SRCS =	ft_isalnum.c \
 		ft_printf/ft_parsing.c \
 		ft_printf/ft_parsing_plus.c\
 		ft_printf/ft_useful.c
-FLAGS = -Wall -Wextra -Werror -g3
+FLAGS = -Wall -Wextra -Werror
 HEADER = libft.h
 OBJS = ${SRCS:.c=.o}
 
@@ -73,7 +73,7 @@ $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
 
 $(OBJS): %.o: %.c $(HEADER)
-	gcc $(FLAGS) -I$(HEADER) -c $< -o $@
+	gcc $(FLAGS) -c $< -o $@
 	
 all: $(NAME)
 

@@ -31,11 +31,9 @@ char	*ft_uitox_lowercase(unsigned long n)
 {
 	int			size;
 	char		*str;
-	int			i;
 	char		*hextab;
 
 	hextab = "0123456789abcdef";
-	i = 0;
 	size = get_size(n);
 	str = (char *)malloc((size + 1) * sizeof(char));
 	if (!str)
@@ -55,11 +53,9 @@ char	*ft_uitox_uppercase(unsigned long n)
 {
 	int			size;
 	char		*str;
-	int			i;
 	char		*hextab;
 
 	hextab = "0123456789ABCDEF";
-	i = 0;
 	size = get_size(n);
 	str = (char *)malloc((size + 1) * sizeof(char));
 	if (!str)
